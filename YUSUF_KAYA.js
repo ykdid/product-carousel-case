@@ -3,7 +3,7 @@
     const STORAGE_LIKED = "likedProducts";
 
     const init = () => {
-        if (!location.hostname.includes("e-bebek.com") || location.pathname !== "/") {
+        if (location.hostname !== "www.e-bebek.com" || location.pathname !== "/") {
             console.log("wrong page");
             return;
         }
